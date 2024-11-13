@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMUProjektv2.MassPage"
+             Title="Calculate Mass">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label 
+                Text="Calculation of Mass" 
+                FontSize="24" 
+                HorizontalOptions="Center"/>
+
+            <Entry 
+                x:Name="densityEntry" 
+                Placeholder="Enter density (kg/m³)"/>
+
+            <Entry 
+                x:Name="volumeEntry" 
+                Placeholder="Enter volume (m³)"/>
+
+            <Button 
+                Text="Calculate Mass" 
+                Clicked="OnCalculateMassClicked" 
+                HorizontalOptions="Center"/>
+
+            <Label 
+                x:Name="massResultLabel" 
+                Text="Mass: " 
+                FontSize="18" 
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
